@@ -1,3 +1,9 @@
+"""
+Implementation Tools for the AI Research Agent.
+
+Provides python script execution, file writing tools, and a tool to ask
+the human operator for help when the autonomous implementation is stuck.
+"""
 from langchain_core.tools import tool
 import subprocess
 import os

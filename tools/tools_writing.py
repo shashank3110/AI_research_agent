@@ -1,3 +1,9 @@
+"""
+Scientific Writing Tools for the AI Research Agent.
+
+Provides tools to save the final documents (Markdown, LaTeX) and to 
+compile LaTeX source code into PDF format.
+"""
 from langchain_core.tools import tool
 import os
 import subprocess

@@ -1,3 +1,9 @@
+"""
+Literature Review Tools for the AI Research Agent.
+
+Provides capabilities for the agent to search external literature sources
+such as arXiv and Wikipedia to gather theoretical context on a topic.
+"""
 from langchain_core.tools import tool
 import arxiv
 import wikipedia

@@ -1,3 +1,11 @@
+"""
+Main module for the Autonomous AI Research Agent.
+
+This script sets up a LangGraph state graph to orchestrate an end-to-end AI research pipeline.
+It incorporates multiple specialized agents (literature review, implementation, evaluation, 
+and scientific writing) driven by Google's Gemini LLM to autonomously conduct 
+research on a given topic.
+"""
 import os
 from typing import TypedDict
 from langgraph.graph import StateGraph, END
@@ -6,10 +14,10 @@ from langchain_core.messages import SystemMessage, HumanMessage
 from dotenv import load_dotenv
 import hashlib
 from langgraph.prebuilt import create_react_agent
-from tools_literature import search_arxiv, search_wikipedia
-from tools_implementation import write_python_script, execute_python_script, ask_human
-from tools_evaluation import read_file
-from tools_writing import write_document, compile_latex
+from tools.tools_literature import search_arxiv, search_wikipedia
+from tools.tools_implementation import write_python_script, execute_python_script, ask_human
+from tools.tools_evaluation import read_file
+from tools.tools_writing import write_document, compile_latex
 
 # Load environment variables (e.g. GOOGLE_API_KEY)
 load_dotenv()

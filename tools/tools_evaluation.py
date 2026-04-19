@@ -1,3 +1,9 @@
+"""
+Evaluation Tools for the AI Research Agent.
+
+Provides tools for the evaluation agent to inspect and analyze the logs,
+generated files, and other artifacts produced during the research run.
+"""
 from langchain_core.tools import tool
 import os
 
