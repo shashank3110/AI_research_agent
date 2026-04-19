@@ -32,7 +32,7 @@ The underlying workflow is directed by a core `main.py` state machine, moving th
    ```bash
    # Add your git URL here if applicable
    git clone <repository_url>
-   cd research_agent
+   cd AI_research_agent
    ```
 
 2. **Set up a virtual environment:**
